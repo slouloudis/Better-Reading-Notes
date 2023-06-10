@@ -8,7 +8,6 @@ Imagine you're in a coffee shop, and ask the person behind the till for an ameri
 
 You can confirm this by typing a value into a JS console - you'll see that it just returns the value. 
 
-
 > [!NOTE] This isn't the same for all programming languages  
 > In some languages, such as Lisp, expressions *are* values and can be manipulated. I would give more info, but I don't know it. 
 
@@ -17,9 +16,7 @@ You can confirm this by typing a value into a JS console - you'll see that it ju
 
 If we want a value representing 42 in our program, all we have to do is type it in. Easy! Now we'll have the bits of `101010` in memory, represented in binary. 
 
-[What is binary?](Binary Overview)
-
-## Comparing Things: Identity
+[CompSci 1010 - What is binary?](CompSci 101.-What-is-binary)
 
 There are two main things to be aware of when comparing things in JS. 
 
@@ -48,6 +45,7 @@ We've compared two empty functions to each other, but the result is false. The s
 
 Two keyword and concepts to remember - 
 
-Passed by value - Primative data types, meaning: Strings, Numbers, Null, Undefined and Boolean are compared by their value. 
+Passed by value - Primitive data types, meaning: Strings, Numbers, Null, Undefined and Boolean are compared by their value. 
 
 Passed by reference - Objects, arrays and functions are compared by their *reference* to a location in the computers memory. When we made the arrays earlier, even though they held the same data types, they hold different references to their storage location, so they are not the same. 
+

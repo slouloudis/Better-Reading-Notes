@@ -12,7 +12,6 @@ The `%` operator is very useful, giving the remainder of division. eg - `215 % 1
 
 	The % is often called the modulo. 
 
-
 ## Strings 
 
 single quotes, double quotes and backticks are all fine to mark a string data type. 
@@ -35,20 +34,23 @@ would return 'concatenate'
 
 For string and numbers there are a bunch of *methods* you'll want to use. [String and Number Methods]()
 
-**Backtick literals** are very useful - writing something inside the ${} means it will be computed. 
+**Template literals** are very useful - writing something inside the ${} means it will be computed. Use the  back tick character for these, and wrap expressions in curly braces with a $ at the start. 
 
 ```
 `half of 50 is ${50 / 2}`
 ```
 
-
-**Typeof** is also a nice operator to be aware of. Using it will tell you the data type of whatever you operate on. 
+**typeof** is also a nice operator to be aware of. Using it will tell you the data type of whatever you operate on. 
 
 ```
-console.log(typeof 10)
+console.log(typeof 10);
 // -> number
-console.log(typeof '10')
+console.log(typeof "two");
 // -> string
+
+let x = true;
+console.log(typeof x);
+// -> boolean
 ```
 
 Some terminology. 
@@ -60,11 +62,10 @@ Operators that take a single value are called ***unary operators***
 
 True and False, "yes" and "no", "on" and "off", it's very useful to have the Boolean type. 
 
+
 ```
 console.log(5 > 10)
 // -> false
 ```
 
-Strings can be compared in the same way, although it's a littlemore complicated. Uppercase letters are considered 'less' than lowercase ones, and for anything else you'll want to consult google. 
-
-
+Strings can be compared in the same way, although it's a little more complicated. Uppercase letters are considered 'less' than lowercase ones, and for anything else you'll want to consult google. 
