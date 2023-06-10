@@ -13,7 +13,7 @@ This means that I might have an article on Arrays in Javascript, and another one
 
 [HTML](HTML)
 [CSS](CSS)
-[Vanilla-JS](Vanilla-JS)
+[Vanilla-JS-Hub](Vanilla-JS-Hub.md)
 [ComputerScience Fundamentals](Computer Science Fundamentals)
 
 [React Hub](React-Hub)
@@ -26,6 +26,7 @@ This means that I might have an article on Arrays in Javascript, and another one
 
 
 ## Methodology, Paradigms, Structure
+
 
 
 

@@ -10,8 +10,8 @@ This wont be covering the history of Javascript, but it is worth knowing. The bi
 
 [Terminology Cheatsheet](Terminology Cheatsheet)
 
-[Values, Expressions and Identity](Values&Expressions&Identity)
-[Numbers, Strings and Booleans](Numbers,%20Strings%20and%20Booleans.md)
+[Values, Expressions and Identity](Javascript/Values&Expressions&Identity.md)
+[Numbers, Strings and Booleans](Javascript/Numbers,%20Strings%20and%20Booleans.md)
 [Variables and Bindings](Variables and Bindings)
 
 ## Index - Intermediate

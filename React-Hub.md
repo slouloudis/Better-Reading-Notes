@@ -1,7 +1,7 @@
 Master post for all react related documents. 
 
 Documentation - https://react.dev/learn
-If you want some more indepth information, it's towards the bottom of the page. I recommend reading this if you're comfortable with the DOM, browser engines, and some more details about how javascript works. 
+If you want some more in-depth information, it's towards the bottom of the page. I recommend reading this if you're comfortable with the DOM, browser engines, and some more details about how javascript works. 
 
 ## What is React?
 
@@ -68,8 +68,8 @@ If you're brand new to react, that list may not have been very clear. Don't worr
 
 ## Links to topics -> 
 
-
-HTML and the DOM - 
+## React in the machine  -> 
+#### HTML, React & the Virtual DOM
 When we're generating HTML, we don't really care to much about *how* our buttons or nav bars are getting themselves onto the page. What we really want is to define, say a button, and have that look the same everywhere. 
 
 With that in mind, the most performance impactful thing we can do on our browser is write to the dom. *Manipulating the DOM is expensive*. We could create 10,000 objects instantly in JS and that would still be faster than manipulating and updating styles - remember that the browser has to repaint, do animations & load network requests all at the same time on a single threaded language. 
@@ -122,6 +122,57 @@ This is the object that is being spat out by react from the render function-
 ```
 
 It's really cheap to generate these objects -  it's much faster to change these objects (as they get modified by state), as opposed to writing to the DOM every single time a change happens. This object, and it's children, are what is known as the 'Virtual DOM'
+
+#### The Reconciliation Algorithm
+
+Reconciliation is how React updates the UI to reflect the changes that happen in the component state. 
+
+Let's take a simple conditional component as an example (Ignore the dodgy architecture):
+
+```
+const SignUpForm = () => {
+	const [isFromMars, setIsFromMars] = useState(false); 
+	
+	const handleCheck = () => { 
+		setIsFromMars(!isFromMars);
+	};
+	
+	return (
+	 <>
+		<Checkbox value={!isFromMars} onChange={handleCheck} /> 
+		{isFromMars ? (
+		  <Input id="mars-tax-number" placeholder="Please enter your MTN" />
+		) : (
+		  <TextPlaceholder />      
+		)}
+	</> 
+  );
+};
+```
+
+Our checkbox starts its life being unchecked - I think we can guess what happens when the value of `isFromMars` changes from `false` to `true` - the node in the virtual dom is destroyed, and the new one, `Input` replaces it. 
+
+What about if we needed Earth people to put in their tax numbers too, and we end up with something like this: 
+
+```
+return (
+	..// checkbox stuff 
+	{isFromMars ? (
+		<Input id="mars-tax-number" placeholder="Please enter your MTN" />
+		) : (
+		<Input id="eath-tax-number" placeholder="Please enter your ETN" />
+		)}
+)
+```
+
+What happens now? 
+
+
+~~It works by comparing the current virtual DOM (The object and its children above) and the new (state) updated virtual DOM and only changing what values it needs to. 
+
+~~React batches multiple changes into a single update to reduce how often the virtual DOM is updated and, in turn, the 'real' DOM.~~~~
+
+
 
 
 
