@@ -1,5 +1,7 @@
 Master post for all react related documents. 
 
+Looking for Next.js? Go here: [[Next.js Hub]]
+
 Documentation - https://react.dev/learn
 If you want some more in-depth information, it's towards the bottom of the page. I recommend reading this if you're comfortable with the DOM, browser engines, and some more details about how javascript works. 
 
@@ -73,8 +75,6 @@ If you're brand new to react, that list may not have been very clear. Don't worr
 When we're generating HTML, we don't really care to much about *how* our buttons or nav bars are getting themselves onto the page. What we really want is to define, say a button, and have that look the same everywhere. 
 
 With that in mind, the most performance impactful thing we can do on our browser is write to the dom. *Manipulating the DOM is expensive*. We could create 10,000 objects instantly in JS and that would still be faster than manipulating and updating styles - remember that the browser has to repaint, do animations & load network requests all at the same time on a single threaded language. 
-
-[[Javascript/If Javascript Is Single Threaded, How Is It Asynchronous?]]
 
 Think of a webpage like a document - like a word doc. We can edit word documents using, well, Microsoft Word. In the browser we edit our HTML document with an API. That API is the DOM. 
 

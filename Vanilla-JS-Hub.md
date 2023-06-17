@@ -1,5 +1,7 @@
 #hub-post 
 
+Want to learn about JS outside the browser? - Go here -> **[[JavaScript outside the browser - Intro to Node.js]]**
+
 For now, this is going to be a bit sparse of any `console.log('Hello World!')`
 
 I'm planning on building out a more compact quick reference section, but for now I really want to dive deep into topics. 
