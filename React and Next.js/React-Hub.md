@@ -74,7 +74,7 @@ When we're generating HTML, we don't really care to much about *how* our buttons
 
 With that in mind, the most performance impactful thing we can do on our browser is write to the dom. *Manipulating the DOM is expensive*. We could create 10,000 objects instantly in JS and that would still be faster than manipulating and updating styles - remember that the browser has to repaint, do animations & load network requests all at the same time on a single threaded language. 
 
-[[If Javascript Is Single Threaded, How Is It Asynchronous?]]
+[[Javascript/If Javascript Is Single Threaded, How Is It Asynchronous?]]
 
 Think of a webpage like a document - like a word doc. We can edit word documents using, well, Microsoft Word. In the browser we edit our HTML document with an API. That API is the DOM. 
 

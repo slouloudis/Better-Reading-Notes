@@ -16,7 +16,7 @@ This means that I might have an article on Arrays in Javascript, and another one
 [Vanilla-JS-Hub](Vanilla-JS-Hub.md)
 [ComputerScience Fundamentals](Computer Science Fundamentals)
 
-[React Hub](React-Hub)
+[React Hub](React%20and%20Next.js/React-Hub.md)
 
 
 
